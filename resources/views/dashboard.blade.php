@@ -1,18 +1,26 @@
 <x-layouts.app :title="__('Dashboard')">
-    <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
-        <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
+    <section>
+        {{--Image--}}
+        <div class="flex justify-center items-center text-zinc-300 border border-zinc-100 rounded-lg p-10 h-50 mb-5">
+            <p>Image</p>
         </div>
-        <div class="relative h-full flex-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-            <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-        </div>
-    </div>
+
+        {{--Event Info--}}
+        <h2 class="text-2xl font-bold mb-3">Event Name</h2>
+        <p>October 15, 2025</p>
+        <p>Some Location</p>
+
+        <flux:separator/>
+
+        {{--Description--}}
+        <p>Description</p>
+
+        {{--Roles--}}
+        <p>Roles Needed</p>
+        <ul>
+            <li>Role 1</li>
+            <li>Role 2</li>
+            <li>Role 3</li>
+        </ul>
+    </section>
 </x-layouts.app>
