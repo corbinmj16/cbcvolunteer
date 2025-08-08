@@ -12,7 +12,7 @@ class Event extends Model
     protected function casts(): array
     {
         return [
-            'roles' => 'json'
+            'roles' => 'json',
         ];
     }
 }
